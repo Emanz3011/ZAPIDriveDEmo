@@ -38,11 +38,6 @@ public class PlacesZAPI implements ZAPIClient.ZAPI{
                                 ArrayList<PlaceLikelihood> arrayPlace = new ArrayList<PlaceLikelihood>();
                                 for (PlaceLikelihood placeLikelihood : likelyPlaces) {
                                     arrayPlace.add(placeLikelihood);
-
-
-                                   /* System.out.println(String.format("Place '%s' has likelihood: %g",
-                                            placeLikelihood.getPlace().getName(),
-                                            placeLikelihood.getLikelihood()));*/
                                 }
                                 onReturn(arrayPlace);
                                 likelyPlaces.release();
